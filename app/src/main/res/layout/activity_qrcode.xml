@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStartScanClick"
+        android:text="Start Scan"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/tv_scan_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="result:"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onGenerateQRCodeClick"
+        android:text="generate QRCoed"
+        android:textAllCaps="false"/>
+
+    <CheckBox
+        android:id="@+id/cb_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logo"/>
+
+    <ImageView
+        android:id="@+id/iv_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"/>
+
+</LinearLayout>
